@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Tela de login</title>
+</head>
+
+<body class="bg-secondary">
+    <!-- TELA DE LOGIN -->
+    <div id="loginScreen" class="container rounded bg-dark mt-5 px-4 text-light" style="max-width: 480px;">
+        <div class="row">
+            <div class="text-center mt-3">
+                <h1 class="display-5">Entre na sua conta</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="alertLogin" class="alert alert-warning show d-none" role="alert">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 h5">
+                Email:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text bg-secondary text-light"><i class="fas fa-user"></i></span>
+                    <input id="emailLogin" type="email" class="form-control" placeholder="seunome@exemplo.com"
+                        aria-label="Email" aria-describedby="emailLogin" autofocus>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 h5">
+                Senha:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text bg-secondary text-light"><i class="fas fa-unlock"></i></span>
+                    <input id="passwordLogin" type="password" class="form-control" placeholder="********"
+                        aria-label="Password" aria-describedby="passwordLogin">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-grid mt-3">
+                <button id="btnLogin" class="btn btn-success btn-lg"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-12 h5">
+                Ainda não tem uma conta?
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-grid my-3">
+                <button id="btnJoin" class="btn btn-info btn-lg"><i class="fas fa-users"></i> Cadastre-se</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TELA DE CADASTRO -->
+    <div id="createAccScreen" class="container rounded bg-dark mt-5 px-4 text-light d-none" style="max-width: 480px;">
+        <div class="row">
+            <div class="text-center mt-3">
+                <h1 class="display-5">Criar nova conta</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="alertPassword" class="alert alert-warning show d-none" role="alert">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 h5">
+                Email:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text bg-secondary text-light"><i class="fas fa-user"></i></span>
+                    <input id="emailCreate" type="email" class="form-control" placeholder="seunome@exemplo.com"
+                        aria-label="Email" aria-describedby="emailCreate">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 h5">
+                Senha:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text bg-secondary text-light"><i class="fas fa-unlock"></i></span>
+                    <input id="passwordCreate" type="password" class="form-control" placeholder="********"
+                        aria-label="Password" aria-describedby="passwordCreate">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-grid my-3">
+                <button id="btnCreate" class="btn btn-primary btn-lg"><i class="fas fa-users"></i> Cadastrar</button>
+            </div>
+        </div>
+        <div class="row">
+            <a id="goToLogin" class="link text-white mb-3" style="cursor: pointer;">Já tem uma conta? Clique para entrar</a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
